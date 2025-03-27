@@ -7,6 +7,22 @@ from WeatherRoutingTool.ship.shipparams import ShipParams
 
 logger = logging.getLogger('WRT.ship')
 
+class Boat:
+    speed: float  # boat speed in m/s
+
+    def __init__(self, config):
+        self.speed = config.BOAT_SPEED * u.meter/u.second
+        pass
+
+    def get_ship_parameters(self, courses, lats, lons, time, speed=None, unique_coords=False):
+        pass
+
+    def get_boat_speed(self):
+        return self.speed
+
+    def print_init(self):
+        pass
+
 class SyntheticFuelBoat(Boat):
     """
     A boat class that calculates fuel rate based on environmental conditions.
