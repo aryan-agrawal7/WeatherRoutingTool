@@ -16,10 +16,10 @@ The task was to create a new ship class in the `ship.py` file with the following
 Currently, the relationship between environmental parameters and fuel consumption is not clearly defined. Since there are multiple ways to approach this, I have implemented the simplest solution: a mathematical relation between fuel consumption and environmental factors.  
 
 I asked ChatGPT for an approximate mathematical formula that relates wind speed and wave height to fuel consumption. It suggested the following formula:  
-\[ \Delta F = k_1 \cdot w^3 + k_2 \cdot H^2 \]  
-Here, \( k_1 \) and \( k_2 \) are constants that depend on the ship type. The formula indicates that fuel consumption is influenced by wind speed (\( w \)) cubically and wave height (\( H \)) quadratically.  
+Delta F = k1 . w^3 + k2 . H^2 
+Here, k1 and k2 are constants that depend on the ship type. The formula indicates that fuel consumption is influenced by wind speed w cubically and wave height H quadratically.  
 
-Using this formula, I created random values for \( k_1 \) and \( k_2 \) for each ship type and implemented a basic function. This function takes wave height and wind speed as arguments and returns the calculated fuel consumption.  
+Using this formula, I created random multiplication constants for each ship type and implemented a basic mathematical function for fuel consumption calculations. This function takes wave height and wind speed as arguments and returns the calculated fuel consumption.  
 
 ### Code Location  
 
